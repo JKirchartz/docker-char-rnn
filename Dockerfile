@@ -1,6 +1,6 @@
 #version 0.0.1
 FROM ubuntu:14.04
-MAINTAINER Mike Bartoli "michael.bartoli@pomona.edu"
+LABEL J Kirchartz "me@jkirchartz.com"
 RUN apt-get update
 RUN apt-get -y install \
 	python \
@@ -15,7 +15,7 @@ RUN apt-get -y install \
 	libatlas-base-dev \
 	gcc \
 	gfortran \
-	g++ \ 
+	g++ \
 	curl \
 	lua5.2 \
 	liblua5.2-dev
